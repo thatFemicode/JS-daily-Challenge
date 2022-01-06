@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DayOne</title>
+  </head>
+  <body>
+    <!-- WRITE A PROGRAM TO PRINT OR SHOW MULTIPLICATION TABLE 1-10  USING JAVASCRIPT 
+CODE BY MMADU DIVINE-->
+  </body>
+  <script>
+    const multiplier = [];
+    // let i = 0 and check if i <10 to continue iteration
+    for (let i = 0; i < 10; i++) {
+      multiplier.push(i + 1);
+    }
+
+    const indx = [];
+    for (let i = 0; i < 12; i++) {
+      indx.push(i + 1);
+    }
+    console.log(multiplier, indx);
+
+    multiplier.forEach((i) => {
+      indx.forEach((j) => {
+        let a = i;
+        let b = j;
+        // console.log(a, b);
+        console.log(a + "*" + b + "=" + i * j);
+      });
+    });
+  </script>
+</html>
