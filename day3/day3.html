@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function fib(n) {
+        if (n < 3) return 1;
+        let arr = [];
+
+        let prev = 1;
+        let curr = 1;
+        for (let i = 0; i < n; i++) {
+          let next = prev + curr;
+          prev = curr;
+          curr = next;
+          //   arr.push(next);
+          //   console.log(arr[i]);
+        }
+        return curr;
+      }
+      fib(50);
+
+      //   for (let i = 0; i < 50; i++) {
+      //     if (i == 0) {
+      //       arr.push(i);
+      //       console.log(arr[i]);
+      //     } else if (i == 1) {
+      //       arr.push(i);
+      //       console.log(arr[i]);
+      //     } else {
+      //       a = i - 1;
+      //       b = i - 2;
+      //       c = arr[a] + arr[b];
+      //       arr.push(c);
+      //       console.log(arr[i]);
+      //     }
+      //   }
+    </script>
+  </body>
+</html>
