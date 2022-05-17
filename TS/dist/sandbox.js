@@ -44,3 +44,20 @@ const user = {
 let cid = 1;
 // let customerId = <number>cid
 let customerId = cid;
+customerId = "bolu";
+console.log(customerId);
+// /Functions
+function addNum(x, y) {
+    return x + y;
+}
+console.log(addNum("me", "him"));
+function log(message) {
+    console.log(message);
+}
+log("me");
+const user1 = {
+    id: 1,
+    name: "John",
+};
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
